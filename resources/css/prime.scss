@@ -1,0 +1,95 @@
+//update prime vue style
+html[dir='rtl'] {
+    .p-float-label label {
+        right: 10px;
+        left: auto;
+    }
+
+    .p-datatable .p-datatable-tbody > tr > td {
+        text-align: right;
+    }
+    li.p-menuitem-separator svg{
+        @apply rotate-180
+    }
+}
+
+body {
+    .p-column-header-content .p-column-title, .p-datatable .p-datatable-thead > tr > th {
+        text-align: center;
+    }
+
+    /*update table component load style*/
+    .p-component-overlay {
+        background: transparent;
+    }
+
+    //update pagination icon style
+    .p-paginator {
+        .p-paginator-first, .p-paginator-prev, .p-paginator-last, .p-paginator-next {
+            transform: scaleX(-1);
+        }
+    }
+
+    //update breadcrumb
+    .p-breadcrumb ul li:first-child.p-breadcrumb-chevron {
+        display: none;
+    }
+
+    .p-component {
+        @apply main-font;
+    }
+
+    .p-overlaypanel .p-overlaypanel-content {
+        padding: 0.5rem;
+    }
+
+    .p-float-label {
+        label {
+            @apply px-2 bg-white;
+        }
+
+        .p-filled + label, input:focus + label,
+        .p-inputwrapper-focus + label, div.p-inputwrapper-filled + label {
+            margin-top: .4rem;
+        }
+
+        .p-password-input {
+            width: 100%
+        }
+    }
+
+    .p-button .p-button-icon-left {
+        @apply ms-0 me-2;
+    }
+    .p-button{
+        @apply ml-2 py-2 px-4;
+    }
+    .p-button.p-button-icon-only.p-button-rounded{
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+.dark {
+    .p-overlaypanel::before, .p-overlaypanel::after {
+        border-bottom-color: #374151;
+    }
+}
+
+//improve margin filter dropdown
+.p-dropdown-panel .p-dropdown-header {
+    .p-dropdown-filter{
+        @apply px-3 -me-3 ms-0
+    }
+}
+html[dir='rtl'] {
+    .p-dropdown-panel .p-dropdown-header .p-dropdown-filter-icon{
+        @apply left-3 right-auto
+    }
+    .p-input-icon-right > svg:last-of-type, .p-input-icon-right > i:last-of-type{
+        @apply left-3 right-auto
+    }
+}
+
+
+

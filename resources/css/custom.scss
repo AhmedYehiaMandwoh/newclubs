@@ -1,0 +1,20 @@
+/*them css*/
+.font-inhert, .font-inhert * {
+    font-size: inherit !important;
+}
+body {
+    font-family: Tajawal,"ui-sans-serif" !important;
+    .main-font{
+        font-family: Tajawal,"ui-sans-serif" !important;
+    }
+    .el-container {
+        @apply bg-white border-gray-200 dark:bg-gray-800 dark:border-gray-700 text-slate-900 dark:text-slate-50
+    }
+    .floating-label{
+        @apply dark:text-gray-200 dark:bg-dark-500 pe-2
+    }
+}
+html[dir='rtl'] {
+    text-align: right;
+}
+

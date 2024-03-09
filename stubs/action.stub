@@ -1,0 +1,16 @@
+<?php
+
+namespace {{ namespace }};
+
+use App\Classes\BaseAction;
+use App\Classes\Abilities;
+
+class {{ class }} extends BaseAction
+{
+//    protected Abilities $ability=Abilities::;
+
+    public function handle()
+    {
+        // ...
+    }
+}
